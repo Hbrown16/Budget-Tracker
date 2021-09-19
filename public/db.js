@@ -40,6 +40,7 @@ function saveRecord(record) {
          })
          .then(response => response.json())
           .then(() => {
+              const transaction = db.transaction(["Pending Charge"], "readwrite");
               
           })
     })
