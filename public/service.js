@@ -39,5 +39,9 @@ self.addEventListener("activate", function(event) {
 //fetch
 
 self.addEventListener("fetch", function(event) {
-    
+   if(event.request.url.includes("/api/")) {
+       event.respondWith(
+           
+       )
+   } 
 })
