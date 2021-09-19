@@ -19,9 +19,11 @@ function populateTotal() {
   const total = transactions.reduce((total, t) => {
     return total + parseInt(t.value);
   }, 0);
-  
+  const totalEl = document.querySelector("#total");
+  totalEl.textContent = total;
+}
 function populateTable() {
-  let tbody = document.querySelector("#tbody");
+  const tbody = document.querySelector("#tbody");
   tbody.innerHTML = "";
 
   transactions.forEach(transaction => {
