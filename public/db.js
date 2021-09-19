@@ -26,10 +26,12 @@ function saveRecord(record) {
     const store = transaction.objectStore("Pending Charge");
     const getAll = store.getAll();
 
-    getAll.onsuccess = function( {
+    getAll.onsuccess = function() {
         console.log(getAll.result)
         if (getAll.result.length > 0) {
             console.log(getAll.result),
-        }
+         fetch("/api/transaction/bulk", {
+                
+         }
     })
 }
