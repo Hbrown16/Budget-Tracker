@@ -26,10 +26,13 @@ self.addEventListener("activate", function(event) {
             return Promise.all(
                 keyList.map(key => {
                     if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-                        
+                       console.log("Old data being removed", key);
+                       return caches.delete(key); 
                     }
                 })
-            )
+            );
         })
-    )
-})
+    );
+    self.clients.claim();
+});
+
