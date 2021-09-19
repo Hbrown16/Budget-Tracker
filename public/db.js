@@ -14,3 +14,9 @@ request.onsuccess = function(event) {
         checkDB();
     }
 };
+
+// shows what the error is if there is an error
+
+request.onerror = function(event) {
+    
+}
