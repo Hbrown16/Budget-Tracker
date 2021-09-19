@@ -27,6 +27,7 @@ function saveRecord(record) {
     const getAll = store.getAll();
 
     getAll.onsuccess = function( {
+        console.log(getAll.result)
         
     })
 }
