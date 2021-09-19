@@ -36,3 +36,8 @@ self.addEventListener("activate", function(event) {
     self.clients.claim();
 });
 
+//fetch
+
+self.addEventListener("fetch", function(event) {
+    
+})
