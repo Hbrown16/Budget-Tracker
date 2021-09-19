@@ -22,6 +22,10 @@ self.addEventListener("Install", function(event) {
 
 self.addEventListener("activate", function(event) {
     event.waitUnitl(
-
+        caches.keys().then(keylist => {
+            return Promise.all(
+                
+            )
+        })
     )
 })
