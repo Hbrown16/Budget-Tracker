@@ -47,11 +47,12 @@ self.addEventListener("fetch", function(event) {
             if (response.status === 200) {
                 cache.put(event.request.url, response.clone());
             }
-            return cache.match(event.request);
+            return response;
           })
           .catch(err => {
-              
-          })  
+              return cache.match(event.request);
+          });
+            
         })
        )
    } 
