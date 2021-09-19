@@ -31,7 +31,9 @@ function saveRecord(record) {
         if (getAll.result.length > 0) {
             console.log(getAll.result),
          fetch("/api/transaction/bulk", {
-                
+            method: "post",
+            body: JSON.stringify(getAll.result),
+              
          }
     })
 }
