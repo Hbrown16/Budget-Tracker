@@ -7,3 +7,6 @@ const FILES_TO_CACHE = [
     "manifest.json",
 ];
 
+const CACHE_NAME = "";
+const DATA_CACHE_NAME = "",
+
