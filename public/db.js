@@ -26,5 +26,7 @@ function saveRecord(record) {
     const store = transaction.objectStore("Pending Charge");
     const getAll = store.getAll();
 
-    
+    getAll.onsuccess = function( {
+        
+    })
 }
