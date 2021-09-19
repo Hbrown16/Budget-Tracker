@@ -43,8 +43,10 @@
   <script>
     if("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        
-      })
+        navigator.serviceWorker.register("service.js").then(reg => {
+          console.log("Service Worker file found!", reg);
+        });
+      });
     }
   </script>
 
