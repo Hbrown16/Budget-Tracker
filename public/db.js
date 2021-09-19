@@ -34,8 +34,10 @@ function saveRecord(record) {
             method: "post",
             body: JSON.stringify(getAll.result),
             headers: {
-                
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json"
             }  
-         }
+         })
+         
     })
 }
