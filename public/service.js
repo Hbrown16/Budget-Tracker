@@ -24,7 +24,9 @@ self.addEventListener("activate", function(event) {
     event.waitUnitl(
         caches.keys().then(keylist => {
             return Promise.all(
-                
+                keyList.map(key => {
+                    
+                })
             )
         })
     )
