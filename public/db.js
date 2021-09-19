@@ -18,5 +18,6 @@ request.onsuccess = function(event) {
 // shows what the error is if there is an error
 
 request.onerror = function(event) {
-    
-}
+    console.log("OOPS!" + event.target.errorCode);
+};
+
