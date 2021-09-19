@@ -38,6 +38,7 @@ function saveRecord(record) {
                 "Content-Type": "application/json"
             }  
          })
+         .then(response => response.json())
          
     })
 }
