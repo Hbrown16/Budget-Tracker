@@ -12,6 +12,8 @@ const DATA_CACHE_NAME = "",
 
 self.addEventListener("Install", function(evt) {
     evt.waitUntil(
-        
+        caches.open(CACHE_NAME).then(cache +> {
+            
+        })
     )
 })
