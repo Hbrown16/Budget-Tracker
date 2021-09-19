@@ -33,7 +33,9 @@ function saveRecord(record) {
          fetch("/api/transaction/bulk", {
             method: "post",
             body: JSON.stringify(getAll.result),
-              
+            headers: {
+                
+            }  
          }
     })
 }
