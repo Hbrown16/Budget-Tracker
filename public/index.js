@@ -91,7 +91,7 @@ function sendTransaction(isAdding) {
   }
 
   // create record
-  let transaction = {
+  const transaction = {
     name: nameEl.value,
     value: amountEl.value,
     date: new Date().toISOString()
@@ -142,10 +142,12 @@ function sendTransaction(isAdding) {
   });
 }
 
-document.querySelector("#add-btn").onclick = function() {
+document.querySelector("#add-btn").addEventListener("click", function(event) {
+  event.preventDefault();
   sendTransaction(true);
-};
+});
 
-document.querySelector("#sub-btn").onclick = function() {
+document.querySelector("#sub-btn").addEventListener("click", function(event) {
+  event.preventDefualt();
   sendTransaction(false);
-};
+});
