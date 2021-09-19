@@ -21,3 +21,6 @@ request.onerror = function(event) {
     console.log("OOPS!" + event.target.errorCode);
 };
 
+function saveRecord(record) {
+    
+}
