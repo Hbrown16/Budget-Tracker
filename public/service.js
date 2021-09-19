@@ -25,7 +25,9 @@ self.addEventListener("activate", function(event) {
         caches.keys().then(keylist => {
             return Promise.all(
                 keyList.map(key => {
-                    
+                    if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
+                        
+                    }
                 })
             )
         })
