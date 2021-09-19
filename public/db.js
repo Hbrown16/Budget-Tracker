@@ -39,6 +39,8 @@ function saveRecord(record) {
             }  
          })
          .then(response => response.json())
-         
+          .then(() => {
+              
+          })
     })
 }
