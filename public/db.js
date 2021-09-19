@@ -41,7 +41,13 @@ function saveRecord(record) {
          .then(response => response.json())
           .then(() => {
               const transaction = db.transaction(["Pending Charge"], "readwrite");
-              
-          })
-    })
+              const store = transaction.objectStore("Pending Charge");
+              store.clear();
+          });
+        }  
+    };
 }
+
+// app coming back online
+
+window.addEventListener("online", checkDatabase);
