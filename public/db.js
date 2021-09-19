@@ -28,6 +28,8 @@ function saveRecord(record) {
 
     getAll.onsuccess = function( {
         console.log(getAll.result)
-        
+        if (getAll.result.length > 0) {
+            console.log(getAll.result),
+        }
     })
 }
